@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    height: 8vh;
+    width: 100%;
+    color: #fff;
+    background: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    width: 90%;
+    margin: auto;
+}
