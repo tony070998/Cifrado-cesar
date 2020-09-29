@@ -9,18 +9,19 @@ export class AppComponent {
   title = 'cesar';
 
   abc : string[] = [
-    'a', 'b', 'c','e',
-    'f', 'g', 'h','i',
+    'a', 'b', 'c','d',
+    'e','f', 'g', 'h','i',
     'j', 'k', 'm','n',
     'o', 'p', 'q','r',
     's', 't', 'u','v',
-    'w', 'x', 'y','z',
+    'w', 'x', 'y','z','a','b','c'
   ];
 
-  // x=a y=b z=c  puedo solo llenar el arreglo despues de la z con esos
 
   // arrPalabra : string [] = ['c','a','s','a'];
-  arrPalabra : string [] = ['h','u','e','v','o','s'];
+  arrPalabra : string [] = ['t','o','n','y'];
+
+  palabraOriginal: string = this.arrPalabra.toString();
 
   idxLetra:number;
 
@@ -32,20 +33,6 @@ export class AppComponent {
 
   palabraNueva:string;
   
-//   cifrar(){
-  
-//     console.log( 'Posicion letra en abc ' + this.idxLetra );
-//     // console.log( 'Letra a cifrar ' + this.arrPalabra[1] );
-//     console.log( 'Posicion de letra nueva ' + this.idxcifrado );
-//     console.log( 'Letra cifrada '+ this.letraCifrada);
-
-//     this.arrPalabraCifrada.push( this.letraCifrada )
-
-//     this.arrPalabraCifrada.forEach(element => {
-//     console.log( 'Arreglo palabra cifrada: ' + element );
-//   });
-
-// }
 
 cicloCifrar(){
   for(let i = 0 ; i < this.arrPalabra.length; i++){
@@ -56,26 +43,16 @@ cicloCifrar(){
   
     this.letraCifrada = this.abc[this.idxcifrado];
   
-    console.log( 'Posicion letra en abc ' + this.idxLetra );
-    console.log( 'Posicion de letra nueva ' + this.idxcifrado );
-    console.log( 'Letra cifrada '+ this.letraCifrada);
+    // console.log( 'Posicion letra en abc ' + this.idxLetra );
+    // console.log( 'Posicion de letra nueva ' + this.idxcifrado );
+    // console.log( 'Letra cifrada '+ this.letraCifrada);
 
     this.arrPalabraCifrada.push( this.letraCifrada )
 
   }
 
-    //     this.arrPalabraCifrada.forEach(element => {
-    //   console.log( 'Arreglo palabra cifrada: ' + element );
-    // });
-
     this.palabraNueva = this.arrPalabraCifrada.toString();
 
-}
-
-cicloFor(){
-  for(let i = 0; i<10; i++){
-      console.log('hola');
-  }
 }
 
 }
